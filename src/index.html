@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Journal Entries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Hind:300|IBM+Plex+Sans:100,400" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>Daily Journal</h1>
+    </header>
+
+    <!-- "Date of Entry" Form Field -->
+    <form action = "">
+        <fieldset>
+            <label for ="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+
+    <!-- "Concepts Covered" Form Field -->
+        <fieldset>
+            <label for = "conceptsCovered"> Concepts Covered</label>
+            <input type = "text" name = "conceptsCovered" id ="conceptsCovered">
+        </fieldset>
+
+    <!-- "Journal Entry" Form Field -->
+        <fieldset>
+            <label for = "journalEntry"> Journal Entry</label>
+            <textarea id = "journalEntry" name="journalEntry"
+                            rows="3" cols="33">           
+            </textarea>
+
+        </fieldset>
+
+    <!-- "Mood for the Day" Drop Down -->
+        <fieldset>
+            <label for = "moodForTheDay"> Mood for the Day</label>
+            <select>
+                <option value = "happy">Happy</option>
+                <option value = "frustrated">Frustrated</option>
+                <option value = "sad">Sad</option>
+                <option value = "content">Content</option>
+            </select>
+
+        </fieldset>
+            <input type = "submit" value = "Record Journal Entry">
+            
+
+    </form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#9AABB9;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+
+}
+
+/* ASSIGNMENT BEGIN- ALL OTHER IS EXPLORATORY */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 450px;
+}
+/* ASSIGNMENT END- ALL OTHER CODE IS EXPLORATORY  */
+
+input {
+    height: 30px;
+    margin-top: 10px;
+}
+
+h1 {
+    background: #9AABB9;
+    padding: 18px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+input[type=submit] {
+    background-color: #F5d3c7;
+    font-family: 'Hind', sans-serif;
+ 
+}
+
+textarea {
+    font-family: 'Hind', sans-serif;
+}
