@@ -28,10 +28,11 @@ let makeJournalEntryComponent = (journalEntry) => {
      }  
 
 journalEntries.forEach((object) => {
-    let entryComponent = makeJournalEntryComponent(object);
 
+    let entryComponent = makeJournalEntryComponent(object);
+    console.log(object);
     let container = document.querySelector(".entryLog");
-    container.innerHTML = entryComponent;
+    container.innerHTML += entryComponent;
     document.body.appendChild(container);
 
 });
