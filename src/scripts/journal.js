@@ -11,6 +11,8 @@
         })
     })
 
+    formBuilder.formHTML();
+
     let maxField = document.querySelector("#journalEntry")
     maxField.addEventListener("keyup", formValidation.maxText);
 
