@@ -34,15 +34,15 @@ h1 {
 input[type=submit] {
     background-color: #F5d3c7;
     font-family: 'Hind', sans-serif;
- 
+
 }
 
 textarea {
     font-family: 'Hind', sans-serif;
 }
 
-.entry {
+.journal-entry {
     font-size: 15px;
     background-color: #F5d3c7;
-    border-bottom: 1px solid; 
+    border-bottom: 1px solid;
 }

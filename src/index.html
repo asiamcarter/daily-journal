@@ -15,19 +15,19 @@
     <!-- "Date of Entry" Form Field -->
     <form action = "">
         <fieldset>
-            <label for ="journalDate">Date of Entry</label>
+            <label for ="journalDate" class="dateEntry">Date of Entry</label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
 
     <!-- "Concepts Covered" Form Field -->
         <fieldset>
-            <label for = "conceptsCovered"> Concepts Covered</label>
+            <label for = "conceptsCovered" class="conceptEntry"> Concepts Covered</label>
             <input type = "text" name = "conceptsCovered" id ="conceptsCovered">
         </fieldset>
 
     <!-- "Journal Entry" Form Field -->
         <fieldset>
-            <label for = "journalEntry"> Journal Entry</label>
+            <label for = "journalEntry" class="journalEntry"> Journal Entry</label>
             <textarea id = "journalEntry" name="journalEntry"
                             rows="3" cols="33">
             </textarea>
@@ -36,7 +36,7 @@
 
     <!-- "Mood for the Day" Drop Down -->
         <fieldset>
-            <label for = "moodForTheDay"> Mood for the Day</label>
+            <label for = "moodForTheDay" class="moodEntry"> Mood for the Day</label>
             <select>
                 <option value = "happy">Happy</option>
                 <option value = "frustrated">Frustrated</option>
@@ -45,7 +45,7 @@
             </select>
 
         </fieldset>
-            <input type = "submit" value = "Record Journal Entry">
+            <input type = "submit" value = "Record Journal Entry" class="recordButton">
 
 
     </form>
