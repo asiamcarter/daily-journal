@@ -3,7 +3,7 @@
     defined in the other JavaScript files.
 */
 
-    API.getJournalEntries()
+    data.getJournalEntries()
     .then(parsedEntries => {
         parsedEntries.forEach ( entries => {
         let entryHTML = entryComponent.makeJournalEntryComponent(entries);
@@ -11,5 +11,6 @@
         })
     })
 
-
+    let entrySave = document.querySelector(".recordButton");
+    entrySave.addEventListener("click", data.buttonClick);
 
