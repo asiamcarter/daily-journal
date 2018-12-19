@@ -40,3 +40,9 @@ input[type=submit] {
 textarea {
     font-family: 'Hind', sans-serif;
 }
+
+.entry {
+    font-size: 15px;
+    background-color: #F5d3c7;
+    border-bottom: 1px solid; 
+}
