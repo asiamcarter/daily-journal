@@ -1,47 +1,45 @@
-const journalEntries = [
-    {
-        date: "07/24/2018",
-        concept: "Array methods",
-        entry: "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
-        mood: "Ok"
-    },
-    {
-        date: "12/04/2018",
-        concept: "Scope in Javascript",
-        entry: "We learned about scope in Javascript-- curly brackets are the castle wall, variables within the wall can see outside, but variables outside of the walls cannot see inside. It mostly made sense.",
-        mood: "Content"
-    }
-]
+/*
+    Main application logic that uses the functions and objects
+    defined in the other JavaScript files.
 
-let makeJournalEntryComponent = (journalEntry) => {
-    return `
-     <div class = "journal-entry">
-     
-     <p class="entry">Date: ${journalEntry.date} </p>
-     <p class="entry">Concept: ${journalEntry.concept} </p>
-     <p class="entry">Entry: ${journalEntry.entry} </p>
-     <p class="entry">Mood: ${journalEntry.mood} </p>
-     
-     </div>
-        `;
- 
-     }  
+    Change the fake variable names below to what they should be
+    to get the data and display it.
+*/
 
-journalEntries.forEach((object) => {
-
-    let entryComponent = makeJournalEntryComponent(object);
-    console.log(object);
-    let container = document.querySelector(".entryLog");
-    container.innerHTML += entryComponent;
-    document.body.appendChild(container);
-
-});
+API.getJournalEntries()
+.then(parsedEntries => {
+    parsedEntries.forEach ( entries => {
+    let entryHTML = entryComponent.makeJournalEntryComponent(entries);
+    entriesDOM.entriesToDOM(entryHTML);
+    })
+})
 
 
 
 
 
 
+// let makeJournalEntryComponent = (journalEntry) => {
+//     return `
+//      <div class = "journal-entry">
+
+//      <p class="entry">Date: ${journalEntry.date} </p>
+//      <p class="entry">Concept: ${journalEntry.concept} </p>
+//      <p class="entry">Entry: ${journalEntry.entry} </p>
+//      <p class="entry">Mood: ${journalEntry.mood} </p>
+
+//      </div>
+//         `;
+
+//      }
+
+// let entriesToDOM = (DOMentry) => {
+//     let container = document.querySelector(".entryLog");
+//     container.innerHTML += DOMentry;
+//     document.body.appendChild(container);
+
+
+// };
 
 
 
@@ -53,6 +51,12 @@ journalEntries.forEach((object) => {
 
 
 
- 
+
+
+
+
+
+
+
 
 
