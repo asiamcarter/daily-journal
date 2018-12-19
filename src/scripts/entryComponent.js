@@ -1,6 +1,6 @@
 //function takes an object as an argument in order to create an HTML template
-
-let makeJournalEntryComponent = (journalEntry) => {
+const entryComponent = {
+   makeJournalEntryComponent (journalEntry) {
     return `
      <div class = "journal-entry">
 
@@ -13,3 +13,4 @@ let makeJournalEntryComponent = (journalEntry) => {
         `;
 
      }
+   }
