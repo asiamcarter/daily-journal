@@ -6,7 +6,7 @@ const entryComponent = {
 
      <p class="entr">Date: ${journalEntry.date} </p>
      <p class="entry">Concept: ${journalEntry.concept} </p>
-     <p class="entry">Entry: ${journalEntry.entry} </p>
+     <p class="entry">Entry:${journalEntry.entry}</p>
      <p class="entry">Mood: ${journalEntry.mood} </p>
 
      </div>
@@ -14,3 +14,4 @@ const entryComponent = {
 
      }
    }
+

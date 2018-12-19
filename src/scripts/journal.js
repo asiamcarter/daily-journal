@@ -11,6 +11,10 @@
         })
     })
 
-    let entrySave = document.querySelector(".recordButton");
-    entrySave.addEventListener("click", data.buttonClick);
+    let maxField = document.querySelector("#journalEntry")
+    maxField.addEventListener("keyup", formValidation.maxText);
+
+
+
+
 
