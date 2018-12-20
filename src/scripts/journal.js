@@ -3,13 +3,13 @@
     defined in the other JavaScript files.
 */
 
-    data.getJournalEntries()
-    .then(parsedEntries => {
-        parsedEntries.forEach ( entries => {
-        let entryHTML = entryComponent.makeJournalEntryComponent(entries);
-        entriesDOM.entriesToDOM(entryHTML);
-        })
-    })
+    // data.getJournalEntries()
+    // .then(parsedEntries => {
+    //     parsedEntries.forEach ( entries => {
+    //     let entryHTML = entryComponent.makeJournalEntryComponent(entries);
+    //     entriesDOM.entriesToDOM(entryHTML);
+    //     })
+    // })
 
     formBuilder.formHTML();
 
