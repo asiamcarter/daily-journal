@@ -8,7 +8,7 @@ const data = {
     },
 
     saveJournalEntry (entryToSave) {
-        fetch("http://localhost:8088/entries", {
+        return fetch("http://localhost:8088/entries", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -18,7 +18,7 @@ const data = {
      },
 
         buttonClick() {
-            event.preventDefault();
+            // event.preventDefault();
             console.log("click")
             const date = document.querySelector("#journalDate").value;
             const concept = document.querySelector("#conceptsCovered").value;
@@ -33,8 +33,13 @@ const data = {
             }
 
 
-            data.saveJournalEntry(savedObject);
-            location.reload(true);
+            data.saveJournalEntry(savedObject)
+            .then (response => {
+                entriesDOM.journalEntriesToDOM()
+
+            });
+
+            // location.reload(true);
 
 
 

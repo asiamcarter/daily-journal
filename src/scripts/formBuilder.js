@@ -6,7 +6,7 @@ const formBuilder = {
     </header>
 
     <!-- "Date of Entry" Form Field -->
-    <form>
+
         <fieldset>
             <label for ="journalDate">Date of Entry</label>
             <input type="date" name="journalDate" id="journalDate">
@@ -39,7 +39,7 @@ const formBuilder = {
             <input type = "submit" value = "Record Journal Entry" class="recordButton">
 
 
-    </form>
+
         `
         let HTMLcontainer = document.createElement("container")
         HTMLcontainer.innerHTML = HTML
