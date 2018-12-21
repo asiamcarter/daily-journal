@@ -1,7 +1,8 @@
 //function appends argument to DOM
 const entriesDOM = {
+
     entriesToDOM (DOMentry) {
-        let container = document.querySelector(".entryLog");
+        container = document.querySelector(".entryLog");
         container.innerHTML += DOMentry;
         document.body.appendChild(container);
     },
@@ -9,10 +10,17 @@ const entriesDOM = {
     journalEntriesToDOM () {
         data.getJournalEntries()
         .then(parsedEntries => {
-        parsedEntries.forEach ( entries => {
-        let entryHTML = entryComponent.makeJournalEntryComponent(entries);
-        entriesDOM.entriesToDOM(entryHTML);
+        let entryDocFrag = document.createDocumentFragment()
+        parsedEntries.forEach (entries => {
+        let entryHTML = entryComponent.makeJournalEntryComponent(entries)
+        entryDocFrag.appendChild(entryHTML)
             })
+
+        let entryArticle = document.querySelector(".entryLog")
+        while (entryArticle.firstChild) {
+            entryArticle.removeChild(entryArticle.firstChild)
+        }
+        entryArticle.appendChild(entryDocFrag)
         })
     }
 }
