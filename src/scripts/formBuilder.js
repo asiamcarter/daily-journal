@@ -1,3 +1,4 @@
+
 const formBuilder = {
     formHTML () {
         let HTML = `
@@ -38,6 +39,27 @@ const formBuilder = {
         </fieldset>
             <input type = "submit" value = "Record Journal Entry" class="recordButton">
 
+        <!-- Radio Buttons -->
+        <div class="radio-buttons">
+            <p>Filter Journal Entries By Mood</p>
+            <div>
+                <input type="radio" id="happy" name="mood" value="happy" checked>
+                <label for="sad">Happy</label>
+            </div>
+            <div>
+                <input type="radio" id="frustrated" name="mood" value="frustrated">
+                <label for="frustrated">Frustrated</label>
+            </div>
+            <div>
+            <input type="radio" id="sad" name="mood" value="sad">
+            <label for="sad">Sad</label>
+            </div>
+            <div>
+            <input type="radio" id="content" name="mood" value="content">
+            <label for="content">Content</label>
+            </div>
+        </div>
+
 
 
         `
@@ -49,3 +71,5 @@ const formBuilder = {
 
 
 }
+
+export default formBuilder;

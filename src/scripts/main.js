@@ -2,6 +2,12 @@
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
 */
+
+import entriesDOM from "./entriesDOM"
+import formBuilder from "./formBuilder"
+import formValidation from "./formValidation"
+import data from "./data"
+
     entriesDOM.journalEntriesToDOM();
     formBuilder.formHTML();
 

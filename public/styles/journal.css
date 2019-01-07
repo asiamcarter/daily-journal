@@ -8,14 +8,23 @@ body {
 
 }
 
-/* ASSIGNMENT BEGIN- ALL OTHER IS EXPLORATORY */
+
 fieldset {
     display: flex;
     flex-direction: column;
     background-color: white;
     width: 450px;
 }
-/* ASSIGNMENT END- ALL OTHER CODE IS EXPLORATORY  */
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 500px;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+}
 
 input {
     height: 30px;

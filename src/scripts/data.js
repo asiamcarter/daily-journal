@@ -1,5 +1,6 @@
 //fetches entries from database.json
 
+import entriesDOM from "./entriesDOM"
 
 const data = {
     getJournalEntries () {
@@ -45,3 +46,5 @@ const data = {
         }
 
 }
+
+export default data;

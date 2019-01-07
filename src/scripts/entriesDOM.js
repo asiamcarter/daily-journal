@@ -1,3 +1,7 @@
+import data from "./data"
+import entryComponent from "./entryComponent"
+
+
 //function appends argument to DOM
 const entriesDOM = {
 
@@ -25,3 +29,4 @@ const entriesDOM = {
     }
 }
 
+export default entriesDOM;
