@@ -13,13 +13,6 @@
       "entry": "We learned about scope in Javascript-- curly brackets are the castle wall, variables within the wall can see outside, but variables outside of the walls cannot see inside. It mostly made sense.",
       "mood": "Content",
       "id": 2
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "TESTTEST",
-      "mood": "happy",
-      "id": 3
     }
   ]
 }
