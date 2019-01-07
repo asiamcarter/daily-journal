@@ -47,8 +47,8 @@ const formBuilder = {
                 <label for="sad">Happy</label>
             </div>
             <div>
-                <input type="radio" id="frustrated" name="mood" value="frustrated">
-                <label for="frustrated">Frustrated</label>
+                <input type="radio" id="ok" name="mood" value="ok">
+                <label for="ok">Ok</label>
             </div>
             <div>
             <input type="radio" id="sad" name="mood" value="sad">
@@ -59,9 +59,6 @@ const formBuilder = {
             <label for="content">Content</label>
             </div>
         </div>
-
-
-
         `
         let HTMLcontainer = document.createElement("container")
         HTMLcontainer.innerHTML = HTML
