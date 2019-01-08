@@ -43,20 +43,20 @@ const formBuilder = {
         <div class="radio-buttons">
             <p>Filter Journal Entries By Mood</p>
             <div>
-                <input type="radio" id="happy" name="mood" value="happy" checked>
-                <label for="sad">Happy</label>
+                <input type="radio" id="Happy" name="mood" value="Happy" checked>
+                <label for="Happy">Happy</label>
             </div>
             <div>
-                <input type="radio" id="ok" name="mood" value="ok">
-                <label for="ok">Ok</label>
+                <input type="radio" id="Ok" name="mood" value="Ok">
+                <label for="Ok">Ok</label>
             </div>
             <div>
-            <input type="radio" id="sad" name="mood" value="sad">
-            <label for="sad">Sad</label>
+            <input type="radio" id="Sad" name="mood" value="Sad">
+            <label for="Sad">Sad</label>
             </div>
             <div>
-            <input type="radio" id="content" name="mood" value="content">
-            <label for="content">Content</label>
+            <input type="radio" id="Content" name="mood" value="Content">
+            <label for="Content">Content</label>
             </div>
         </div>
         `
