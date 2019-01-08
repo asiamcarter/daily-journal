@@ -2,6 +2,15 @@
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
 */
+
+import entriesDOM from "./entriesDOM"
+import formBuilder from "./formBuilder"
+import formValidation from "./formValidation"
+import data from "./data"
+import radioButtons from "./radioButtons"
+
+
+
     entriesDOM.journalEntriesToDOM();
     formBuilder.formHTML();
 
@@ -12,9 +21,9 @@
 
     let entrySave = document.querySelector(".recordButton");
     entrySave.addEventListener("click", data.buttonClick);
-
     maxField.addEventListener("onblur", formValidation.badWords)
 
+    radioButtons.buttonListener();
 
 
 

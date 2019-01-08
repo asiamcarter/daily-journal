@@ -1,8 +1,12 @@
+import data from "./data"
+import entryComponent from "./entryComponent"
+
+
 //function appends argument to DOM
 const entriesDOM = {
 
     entriesToDOM (DOMentry) {
-        container = document.querySelector(".entryLog");
+        const container = document.querySelector("#entryLog");
         container.innerHTML += DOMentry;
         document.body.appendChild(container);
     },
@@ -16,7 +20,7 @@ const entriesDOM = {
         entryDocFrag.appendChild(entryHTML)
             })
 
-        let entryArticle = document.querySelector(".entryLog")
+        let entryArticle = document.querySelector("#entryLog")
         while (entryArticle.firstChild) {
             entryArticle.removeChild(entryArticle.firstChild)
         }
@@ -25,3 +29,4 @@ const entriesDOM = {
     }
 }
 
+export default entriesDOM;
